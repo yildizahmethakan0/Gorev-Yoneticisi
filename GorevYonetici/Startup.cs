@@ -20,10 +20,10 @@ public class Startup
 
     public void ConfigureServices(IServiceCollection services)
     {
-        // MongoDB Bağlantısı
+        
         services.AddSingleton<MongoDbContext>();
 
-        // JWT Authentication 
+        
         services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>
             {
