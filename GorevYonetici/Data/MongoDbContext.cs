@@ -9,8 +9,8 @@ namespace GorevYonetici.Data
 
         public MongoDbContext()
         {
-            var client = new MongoClient("mongodb://localhost:27017"); // MongoDB bağlantı dizesini güncelleyin
-            _database = client.GetDatabase("GorevYoneticiDb"); // Veritabanı adını güncelleyin
+            var client = new MongoClient("mongodb://localhost:27017");
+            _database = client.GetDatabase("GorevYoneticiDb");  
         }
 
         public IMongoCollection<Gorev> Gorevler => _database.GetCollection<Gorev>("Gorevler");
