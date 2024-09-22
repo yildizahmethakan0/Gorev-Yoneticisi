@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MongoDB.Driver; // MongoDB kütüphanesini ekleyin
+using MongoDB.Driver; 
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using GorevYonetici.Data; // MongoDbContext'in bulunduğu namespace
+using GorevYonetici.Data;
 
 public class Startup
 {
@@ -23,7 +23,7 @@ public class Startup
         // MongoDB Bağlantısı
         services.AddSingleton<MongoDbContext>();
 
-        // JWT Authentication (Gerekirse ekleyin)
+        // JWT Authentication 
         services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>
             {
