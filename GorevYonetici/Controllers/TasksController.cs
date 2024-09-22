@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using GorevYonetici.Models;
-using GorevYonetici.Data; /// Data ad alanının doğru olduğundan emin olun
+using GorevYonetici.Data;
 using MongoDB.Driver;
 using MongoDB.Bson;
 using System.Collections.Generic;
