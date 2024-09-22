@@ -4,4 +4,6 @@ Görev Yöneticisi
 
 ![2-](https://github.com/user-attachments/assets/e5d18dac-c009-4442-b13b-6708cf939d10)
 
-git clone ile test edebilirsiniz
+git clone ile test edebilirsiniz :
+cd GorevYonetici 
+dotnet run 
