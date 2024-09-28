@@ -9,6 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using GorevYonetici.Data;
 
+
 public class Startup
 {
     public Startup(IConfiguration configuration)
