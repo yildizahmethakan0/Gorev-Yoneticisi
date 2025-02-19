@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace GorevYonetici.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/task")]
     public class TasksController : ControllerBase
     {
         private readonly MongoDbContext _context;
